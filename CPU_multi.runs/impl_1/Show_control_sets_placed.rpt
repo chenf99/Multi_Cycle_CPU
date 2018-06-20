@@ -1,0 +1,129 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.2 (win64) Build 932637 Wed Jun 11 13:30:22 MDT 2014
+| Date         : Mon Jun 18 10:21:48 2018
+| Host         : DESKTOP-H5KUTUP running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Show_control_sets_placed.rpt
+| Design       : Show
+| Device       : xc7a35t
+-----------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    76 |
+| Minimum Number of register sites lost to control set restrictions |    44 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             547 |          313 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             169 |           66 |
+| Yes          | No                    | No                     |              32 |           19 |
+| Yes          | No                    | Yes                    |              32 |           24 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------------+-------------------+----------------------------------+------------------+----------------+
+|    Clock Signal    |   Enable Signal   |         Set/Reset Signal         | Slice Load Count | Bel Load Count |
++--------------------+-------------------+----------------------------------+------------------+----------------+
+|  div/clk           |                   |                                  |                1 |              2 |
+|  cpu/cu/dff/O42[0] |                   |                                  |                1 |              3 |
+|  cpu/ir/I243[0]    |                   |                                  |                2 |              3 |
+| ~CLK_BUFG          |                   |                                  |                4 |              6 |
+|  cpu/aluDR/O25[0]  |                   |                                  |                3 |              8 |
+|  cpu/aluDR/O24[0]  |                   |                                  |                5 |              8 |
+|  cpu/aluDR/O23[0]  |                   |                                  |                6 |              8 |
+|  cpu/aluDR/O26[0]  |                   |                                  |                5 |              8 |
+|  cpu/aluDR/O22[0]  |                   |                                  |                3 |              8 |
+|  cpu/aluDR/O21[0]  |                   |                                  |                5 |              8 |
+|  cpu/aluDR/O20[0]  |                   |                                  |                5 |              8 |
+|  cpu/aluDR/O19[0]  |                   |                                  |                7 |              8 |
+|  cpu/aluDR/O18[0]  |                   |                                  |                4 |              8 |
+|  cpu/aluDR/O17[0]  |                   |                                  |                4 |              8 |
+|  cpu/aluDR/O16[0]  |                   |                                  |                4 |              8 |
+|  cpu/aluDR/O15[0]  |                   |                                  |                7 |              8 |
+|  cpu/aluDR/O14[0]  |                   |                                  |                6 |              8 |
+|  cpu/aluDR/O13[0]  |                   |                                  |                6 |              8 |
+|  cpu/aluDR/O12[0]  |                   |                                  |                4 |              8 |
+|  cpu/aluDR/E[0]    |                   |                                  |                5 |              8 |
+|  cpu/cu/dff/E[0]   |                   |                                  |                4 |              8 |
+|  cpu/cu/dff/O10[0] |                   |                                  |                6 |              8 |
+|  cpu/cu/dff/O11[0] |                   |                                  |                5 |              8 |
+|  cpu/cu/dff/O12[0] |                   |                                  |                5 |              8 |
+|  cpu/cu/dff/O13[0] |                   |                                  |                7 |              8 |
+|  cpu/cu/dff/O14[0] |                   |                                  |                4 |              8 |
+|  cpu/cu/dff/O15[0] |                   |                                  |                4 |              8 |
+|  cpu/cu/dff/O16[0] |                   |                                  |                6 |              8 |
+|  cpu/cu/dff/O17[0] |                   |                                  |                5 |              8 |
+|  cpu/cu/dff/O18[0] |                   |                                  |                6 |              8 |
+|  cpu/cu/dff/O21[0] |                   |                                  |                6 |              8 |
+|  cpu/cu/dff/O19[0] |                   |                                  |                4 |              8 |
+|  cpu/cu/dff/O2[0]  |                   |                                  |                4 |              8 |
+|  cpu/cu/dff/O20[0] |                   |                                  |                2 |              8 |
+|  cpu/cu/dff/O22[0] |                   |                                  |                4 |              8 |
+|  cpu/cu/dff/O23[0] |                   |                                  |                3 |              8 |
+|  cpu/cu/dff/O24[0] |                   |                                  |                6 |              8 |
+|  cpu/cu/dff/O25[0] |                   |                                  |                3 |              8 |
+|  cpu/cu/dff/O26[0] |                   |                                  |                5 |              8 |
+|  cpu/cu/dff/O27[0] |                   |                                  |                5 |              8 |
+|  cpu/cu/dff/O28[0] |                   |                                  |                6 |              8 |
+|  cpu/cu/dff/O29[0] |                   |                                  |                3 |              8 |
+|  cpu/cu/dff/O3[0]  |                   |                                  |                5 |              8 |
+|  cpu/cu/dff/O30[0] |                   |                                  |                5 |              8 |
+|  cpu/cu/dff/O31[0] |                   |                                  |                6 |              8 |
+|  cpu/cu/dff/O32[0] |                   |                                  |                4 |              8 |
+|  cpu/cu/dff/O33[0] |                   |                                  |                3 |              8 |
+|  cpu/cu/dff/O34[0] |                   |                                  |                4 |              8 |
+|  cpu/cu/dff/O35[0] |                   |                                  |                5 |              8 |
+|  cpu/cu/dff/O36[0] |                   |                                  |                5 |              8 |
+|  cpu/cu/dff/O37[0] |                   |                                  |                4 |              8 |
+|  cpu/cu/dff/O38[0] |                   |                                  |                5 |              8 |
+|  cpu/cu/dff/O39[0] |                   |                                  |                2 |              8 |
+|  cpu/cu/dff/O4[0]  |                   |                                  |                5 |              8 |
+|  cpu/cu/dff/O40[0] |                   |                                  |                5 |              8 |
+|  cpu/cu/dff/O41[0] |                   |                                  |                5 |              8 |
+|  cpu/aluDR/O30[0]  |                   |                                  |                2 |              8 |
+|  cpu/cu/dff/O5[0]  |                   |                                  |                5 |              8 |
+|  cpu/cu/dff/O6[0]  |                   |                                  |                3 |              8 |
+|  cpu/cu/dff/O7[0]  |                   |                                  |                4 |              8 |
+|  cpu/cu/dff/O8[0]  |                   |                                  |                5 |              8 |
+|  cpu/cu/dff/O9[0]  |                   |                                  |                6 |              8 |
+|  cpu/aluDR/O29[0]  |                   |                                  |                4 |              8 |
+|  cpu/aluDR/O28[0]  |                   |                                  |                6 |              8 |
+|  cpu/aluDR/O27[0]  |                   |                                  |                4 |              8 |
+|  CLK2_IBUF_BUFG    |                   |                                  |                7 |             10 |
+|  CLK2_IBUF_BUFG    |                   | deb/clear                        |                6 |             22 |
+|  CLK2_IBUF_BUFG    |                   | CLK1_IBUF                        |                6 |             22 |
+|  CLK2_IBUF_BUFG    |                   | div/n_0_counter[0]_i_1           |                7 |             26 |
+|  CLK_BUFG          | cpu/cu/dff/O80[0] |                                  |               19 |             32 |
+| ~CLK_BUFG          |                   | cpu/ir/O24                       |               10 |             32 |
+| ~CLK_BUFG          |                   | cpu/ir/O93                       |                9 |             32 |
+| ~CLK_BUFG          | cpu/cu/dff/O79[0] | cpu/pc/n_0_outputAddress[31]_i_3 |               24 |             32 |
+|  CLK_BUFG          |                   |                                  |               14 |             35 |
+| ~CLK_BUFG          |                   | cpu/cu/of/O45                    |               28 |             35 |
+| ~CLK_BUFG          | cpu/ir/p_0_in     |                                  |               12 |             96 |
++--------------------+-------------------+----------------------------------+------------------+----------------+
+
+

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1529288368">
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
+  <File Type="PWROPT-DCP" Name="Show_pwropt.dcp"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+  <File Type="OPT-DRC" Name="Show_drc_opted.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="Show_timing_summary_routed.pb"/>
+  <File Type="PA-TCL" Name="Show.tcl"/>
+  <File Type="OPT-DCP" Name="Show_opt.dcp"/>
+  <File Type="PWROPT-DRC" Name="Show_drc_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="Show_placed.dcp"/>
+  <File Type="PLACE-IO" Name="Show_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="Show_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="Show_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="Show_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="Show_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="Show_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Show_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Show_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="Show_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="Show_drc_physopted.rpt"/>
+  <File Type="ROUTE-DCP" Name="Show_routed.dcp"/>
+  <File Type="ROUTE-DRC" Name="Show_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="Show_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="Show_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="Show_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="Show_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="Show_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="Show_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="Show_incremental_reuse_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Show_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Show_timing_summary_postroute_physopted.rpt"/>
+  <File Type="RDI-RDI" Name="Show.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Show_timing_summary_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="Show.bit"/>
+  <File Type="BG-BIN" Name="Show.bin"/>
+  <File Type="BITSTR-MSK" Name="Show.msk"/>
+  <File Type="BITSTR-RBT" Name="Show.rbt"/>
+  <File Type="BITSTR-NKY" Name="Show.nky"/>
+  <File Type="BITSTR-BMM" Name="Show_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="Show.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="Show.sysdef"/>
+  <File Type="BG-BGN" Name="Show.bgn"/>
+  <File Type="BG-DRC" Name="Show.drc"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/new/Show_CPU.xdc">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../CPU_single_Basys/CPU_single.srcs/constrs_1/new/Show_CPU.xdc"/>
+        <Attr Name="ImportTime" Val="1527152286"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2014"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream">
+      <Option Id="BinFile">1</Option>
+    </Step>
+  </Strategy>
+</GenRun>
